@@ -1,0 +1,16 @@
+# IP whitelist
+#
+# One entry per line.
+#
+# IPv4:
+#   203.0.113.10
+#
+# CIDR:
+#   192.168.1.0/24
+#
+# DNS:
+#   example.com
+#
+# Empty lines and lines beginning with '#' are ignored.
+#
+# DNS entries are resolved to all their IPv4 A records.
