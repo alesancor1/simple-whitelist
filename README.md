@@ -32,7 +32,7 @@ docker run --rm \
   --cap-add NET_ADMIN \
   --network host \
   -v /etc/simple-whitelist:/etc/simple-whitelist \
-  simple-whitelist \
+  ghcr.io/alesancor1/simple-whitelist:latest \
   --protocol tcp --port 25565
 ```
 
@@ -41,7 +41,7 @@ docker run --rm \
 ```yaml
 services:
   whitelist:
-    build: .
+    image: ghcr.io/alesancor1/simple-whitelist:latest
     cap_add:
       - NET_ADMIN
     network_mode: host
